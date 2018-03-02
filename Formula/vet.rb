@@ -6,7 +6,7 @@
   def install
     prefix.install Dir["*"]
     system "mv", "#{prefix}/bin", "#{prefix}/bins"
-    bin.install_symlink "#{prefix}/bin/vet"
+    bin.install_symlink "#{prefix}/bins/vet"
     File.open("#{prefix}/bin/vet", "w") { |f|
 	f << "#! /bin/sh\n"
         f << "#{prefix}/bins/vet $@"
