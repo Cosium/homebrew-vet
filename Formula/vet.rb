@@ -1,8 +1,8 @@
 class Vet < Formula
   desc "Gerrit client using pull request review workflow"
   homepage "https://github.com/Cosium/vet"
-  url "https://github.com/Cosium/vet/releases/download/3.11/vet-macosx_x64.zip"
-  sha256 "5fd54e35e42f79a5c5d0da77c55ce541ff6ac722ea6834584bd5b060f1578458"
+  url "https://github.com/Cosium/vet/releases/download/3.12/vet-macosx_x64.zip"
+  sha256 "fdb0f638abe133a7267ea43f994525a440e26839fa4be128ccab0400454de786"
   def install
     prefix.install Dir["*"]
     system "mv", "#{prefix}/bin", "#{prefix}/bins"
